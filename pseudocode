@@ -1,0 +1,17 @@
+Algoritma : Menghitung rata-rata rating setiap film
+{Menemukan rata-rata rating tertinggi dan terendah}
+
+Deklarasi :
+film, penonton, film_tertinggi, film_terendah : String
+rating, rata_rata_film : int
+
+Deskripsi :
+print "film dengan rating tertinggi"
+read film_tertinggi
+print "film dengan rating terendah"
+read film_terendah
+print "------- Hasil -------"
+print "| Film | Rata-rata Rating | Jumlah Rating |"
+read rata_rata_film
+int i = 0; i < film.length; i++
+print "| %s | %.2f | %d |\n", film i, rata_rata_film i, penonton.length
