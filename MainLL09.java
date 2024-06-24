@@ -1,8 +1,7 @@
 import java.util.Scanner;
-
-public class Main09 {
+public class MainLL09 {
     public static void main(String[] args) {
-        ProductManager09 manager = new ProductManager09();
+        LinkedList09 list = new LinkedList09();
         Scanner scanner = new Scanner(System.in);
         int pilihan;
 
@@ -28,17 +27,17 @@ public class Main09 {
                     System.out.print("Masukkan harga: ");
                     double harga = scanner.nextDouble();
                     scanner.nextLine();  // Konsumsi newline
-                    manager.tambahProduk(new Product09(namaBarang, stok, harga));
+                    list.tambahProduk(new ProductLL09(namaBarang, stok, harga));
                     break;
                 case 2:
                     System.out.print("Masukkan nama barang yang akan dihapus: ");
                     namaBarang = scanner.nextLine();
-                    manager.hapusProduk(namaBarang);
+                    list.hapusProduk(namaBarang);
                     break;
                 case 3:
                     System.out.print("Masukkan nama barang yang akan dicari: ");
                     namaBarang = scanner.nextLine();
-                    Product09 produk = manager.dapatkanProduk(namaBarang);
+                    ProductLL09 produk = list.dapatkanProduk(namaBarang);
                     if (produk != null) {
                         System.out.println(produk);
                     } else {
@@ -46,7 +45,7 @@ public class Main09 {
                     }
                     break;
                 case 4:
-                    manager.cetakSemuaProduk();
+                    list.cetakSemuaProduk();
                     break;
                 case 5:
                     System.out.println("Keluar...");
